@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:push_local/src/pages/hhtp_request.dart';
 import 'package:push_local/src/pages/home_pages.dart';
 import 'package:push_local/src/pages/mensaje_page.dart';
 import 'package:push_local/src/providers/push_notifications_provider.dart';
@@ -41,6 +42,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         'home':(BuildContext context)=>HomePage(),
         'mensaje': (BuildContext context)=>MessagePage(),
+        'httprequest': (BuildContext context)=>HttpRequest(),
       },
     );
   }
