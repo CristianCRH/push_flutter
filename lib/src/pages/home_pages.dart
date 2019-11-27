@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:push_local/main.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -22,6 +23,18 @@ class HomePage extends StatelessWidget {
                'Enables Button',
                style: TextStyle(
                  fontSize:20
+               ),
+             ),
+           ),
+           const SizedBox(height: 30,),
+           RaisedButton(
+             onPressed: (){
+
+             },
+             child: const Text(
+               'Mostrar snkbr',
+               style: TextStyle(
+                 fontSize: 25,
                ),
              ),
            ),

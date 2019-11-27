@@ -29,6 +29,7 @@ class _MyAppState extends State<MyApp> {
       print(argumento);
       
       navigatorKey.currentState.pushNamed('mensaje',arguments: argumento);
+
     });
   }
 

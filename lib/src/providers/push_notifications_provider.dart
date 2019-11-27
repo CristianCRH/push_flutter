@@ -28,15 +28,16 @@ class PushNotificationProvider{
       //cuando la aplicacion está terminada  
       onLaunch: (info){
         print('====== ON LAOUNCH ======');
-        print(info);
 
+        final noti=info['data']['id']??'no-data';
+        _messagesStreamController.sink.add(noti);
 
       },
       onResume:(info){
         print('====== ON RESUME ======');
         print(info);
 
-        final noti=info['data']['id'];
+        final noti=info['data']['id']??'no-data';
        _messagesStreamController.sink.add(noti);
       }
     );
